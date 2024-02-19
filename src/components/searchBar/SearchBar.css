@@ -1,0 +1,16 @@
+.search-input {
+  border-radius: 30px;
+  border: none;
+  padding: 15px 50px;
+  width: 368px;
+  margin: -85px;
+}
+
+form button {
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: #9ef01a;
+  cursor: pointer;
+  font-weight: 500;
+}

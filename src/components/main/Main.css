@@ -1,0 +1,17 @@
+.main-container {
+  height: 130vh;
+  max-width: 100%;
+  margin: 20px;
+  padding: 40px 300px;
+}
+
+.main-container h1{
+  padding-bottom: 80px;
+}
+
+.main-container div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 20px;
+}
