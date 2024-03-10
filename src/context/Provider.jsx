@@ -9,6 +9,8 @@ export default function Provider({ children }) {
   const [cartItems, setCartItems] = useState(cartFromLocalStorage || []);
   const [cartVisible, setCartVisible] = useState(false);
   const [searchBarVisible, setSearchBarVisible] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
+  const [menuOpenIcon, setMenuOpenIcon] = useState(false);
 
   const value = {
     products,
@@ -19,6 +21,10 @@ export default function Provider({ children }) {
     setCartVisible,
     searchBarVisible,
     setSearchBarVisible,
+    menuVisible,
+    setMenuVisible,
+    menuOpenIcon,
+    setMenuOpenIcon,
   }
 
   useEffect(() => {

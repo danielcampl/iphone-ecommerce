@@ -11,9 +11,6 @@ export default function ProductsCard({ data }) {
   const { cartItems, setCartItems } = useContext(ContextApp);
 
   const handleAddCart = () => {
-    // const updateCartItems = cartItems;
-    // updateCartItems.push(data);
-    // setCartItems(updateCartItems);
     setCartItems([ ...cartItems, data ]);
   }
 

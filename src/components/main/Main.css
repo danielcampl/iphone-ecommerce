@@ -1,5 +1,5 @@
 .main-container {
-  height: 130vh;
+  height: 100%;
   max-width: 100%;
   margin: 20px;
   padding: 40px 300px;
@@ -14,4 +14,24 @@
   flex-wrap: wrap;
   flex-grow: 1;
   gap: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .main-container {
+    height:100%;
+    margin: 0;
+    padding: 50px;
+  }
+  
+  .main-container h1{
+    padding-bottom: 80px;
+  }
+  
+  .main-container div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 20px;
+  }
 }

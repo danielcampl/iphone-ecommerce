@@ -22,7 +22,7 @@ export default function Products() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 4500);
   }, []);
 
   return (

@@ -2,10 +2,11 @@ section.header {
   background-color: #222;
   padding: 20px 10px;
   color: #fff;
+  width: 100%;
 }
 
 .header-container {
-  max-width: 100%;
+  width: 100%;
   margin: 0;
   padding: 0 300px;
 }
@@ -16,7 +17,8 @@ section.header {
   align-items: center;
 }
 
-nav ul {
+nav ul,
+.dropdown-menu {
   text-decoration: none;
   list-style: none;
   display: flex;
@@ -29,18 +31,70 @@ li a.cart-header{
   gap: 4px;
 }
 
-nav ul a {
+nav ul a,
+.dropdown-menu li a {
   color: #fff;
   text-decoration: none;
   list-style: none;
   cursor: pointer;
   transition: all 0.5s;
 }
-nav ul a:hover{
+nav ul a:hover,
+.dropdown-menu li a:hover {
   color: #CCFF33;
 }
 
 img {
   width: 160px;
-  height: 160px;
+}
+
+.i-bars {
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+  transition: all 400ms ease;
+  transform: translate(0, 0);
+}
+
+.open {
+  width: 220px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #6e6e6e;
+  transform: translate(100%, 0);
+  position: absolute;
+  top: 110px;
+  right: 250px;
+}
+
+.dropdown-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .i-bars {
+    display: block;
+  }
+
+  .open {
+    display: block;
+  }
+
+  .top-container nav {
+    display: none;
+  }
+
+  .header-container {
+    padding: 0 20px;
+  }
+
+  img {
+    width: 110px;
+  }
 }

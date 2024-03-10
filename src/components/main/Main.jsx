@@ -17,7 +17,7 @@ export default function Main() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 4500);
   }, []);
 
   return (
